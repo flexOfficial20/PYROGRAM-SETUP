@@ -20,19 +20,9 @@ async def main():
         LOG.print(f"[bold cyan]{mod.split('.')[-1]}")
         
         importlib.import_module(mod)
-
-    # if os.path.exists("./waifu_cache.json"):
-    #     with open("./waifu_cache.json", "r") as f:
-    #         data = json.load(f)
-    #         print(data)
-    #         character_cache.update(data)
-    #         os.remove("./waifu_cache.json")
-          
+         
     print("✨ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ")
-
     await idle()
-    # with open("./waifu_cache.json", "w") as file:
-    #     json.dump(character_cache, file)
     print("ᴄᴀɴᴄᴇʟɪɴɢ ᴀʟʟ ᴛᴀsᴋs.")
 
 

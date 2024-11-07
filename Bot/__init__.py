@@ -1,8 +1,7 @@
 import asyncio
 import time
-from pyrogram import Client, filters
-from pyrogram.types import Message
-from .config import api_id, api_hash, bot_token, OWNER_ID as BOT_OWNER
+from pyrogram import Client
+from Bot.config import api_id, api_hash, bot_token
 import sys
 
 loop = asyncio.get_event_loop()
@@ -38,7 +37,7 @@ async def get_readable_time(seconds: int) -> str:
   
 
 async def init_bot():
-    global BOT_NAME, BOT_USERNAME, BOT_ID, MENTION_BOT, JOINED_USERS
+    global BOT_NAME, BOT_USERNAME, BOT_ID, MENTION_BOT
     print("Connecting to the Telegram API...")
     try:
         await app.start()
