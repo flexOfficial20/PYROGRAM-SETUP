@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from Bot import app
 
 @Client.on_message(filters.command("start"))
 async def start_command(client, message):
